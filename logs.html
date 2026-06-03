@@ -34,3 +34,49 @@
             </div>
         </div>
     </header>
+
+    <main class="container" role="main">
+        <header class="page-header">
+            <h2>Painel de Auditoria e Logs</h2>
+            <p>Tabela de monitoramento simulada de eventos de conectividade.</p>
+        </header>
+
+        <section class="audit-panel" aria-label="Tabela de Eventos de Rede">
+            <table class="audit-table">
+                <thead>
+                    <tr>
+                        <th>Hora UTC</th>
+                        <th>Nó Sensor</th>
+                        <th>Status</th>
+                        <th>Descrição Técnica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14:22:10</td>
+                        <td>AETHER_01</td>
+                        <td><span class="status-badge badge-ok">NOMINAL</span></td>
+                        <td>Dados de temperatura capturados e salvos no servidor principal.</td>
+                    </tr>
+                    <tr>
+                        <td>14:25:30</td>
+                        <td>AETHER_04</td>
+                        <td><span class="status-badge badge-warn">ALERTA</span></td>
+                        <td>Queda de sinal primário detectada. Iniciando contagem de Timeout.</td>
+                    </tr>
+                    <tr>
+                        <td>14:26:00</td>
+                        <td>AETHER_04</td>
+                        <td><span class="status-badge badge-crit">ISOLAMENTO</span></td>
+                        <td>Conexão perdida. Transição efetuada: ativando armazenamento interno seguro.</td>
+                    </tr>
+                    <tr>
+                        <td>15:05:22</td>
+                        <td>AETHER_04</td>
+                        <td><span class="status-badge badge-info">RECOVERY</span></td>
+                        <td>Sinal restabelecido. Injetando dados retidos na base de dados principal.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
