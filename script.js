@@ -37,7 +37,7 @@ function validarFormulario(event) {
         return false;
     }
 
-    alert(✅ Recebido, ${nome}! Seus dados foram validados e o alerta simulado foi enviado com sucesso.);
+    alert(`✅ Recebido, ${nome}! Seus dados foram validados e o alerta simulado foi enviado com sucesso.`);
     document.getElementById('contatoForm').reset();
     return true;
 }
@@ -81,7 +81,7 @@ function montarQuiz() {
 function calcularQuiz() {
     let nota = 0;
     for (let i = 0; i < perguntasQuiz.length; i++) {
-        let selecionado = document.querySelector(input[name="q${i}"]:checked);
+        let selecionado = document.querySelector(`input[name="q${i}"]:checked`);
         if (selecionado && parseInt(selecionado.value) === perguntasQuiz[i].a) {
             nota++;
         }
@@ -93,10 +93,10 @@ function calcularQuiz() {
     if (nota >= 7) {
         resultDiv.style.backgroundColor = '#dcfce7';
         resultDiv.style.color = '#15803d';
-        resultDiv.innerHTML = 🏆 Excelente! Sua pontuação: ${nota}/10. Você entende do sistema AETHER!;
+        resultDiv.innerHTML = `🏆 Excelente! Sua pontuação: ${nota}/10. Você entende do sistema AETHER!`;
     } else {
         resultDiv.style.backgroundColor = '#fee2e2';
         resultDiv.style.color = '#b91c1c';
-        resultDiv.innerHTML = ⚠️ Atenção! Sua pontuação: ${nota}/10. Revise a documentação do projeto.;
+        resultDiv.innerHTML = `⚠️ Atenção! Sua pontuação: ${nota}/10. Revise a documentação do projeto.`;
     }
 }
