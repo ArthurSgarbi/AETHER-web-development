@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AETHER | O Problema</title>
+    <title>AETHER | Benefícios e Prática</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,7 @@
             </div>
             <nav class="main-navigation" aria-label="Navegação Principal">
                 <ul>
-                    
+                    <!-- Lembre-se de adicionar class="active" no link correspondente a página atual -->
                     <li><a href="index.html">Início</a></li>
                     <li><a href="problema.html">Problema</a></li>
                     <li><a href="tecnologia.html">Tecnologia</a></li>
@@ -28,6 +28,7 @@
                 </ul>
             </nav>
             
+            <!-- OPÇÕES DE TROCA DE TEMA (BACKGROUND) -->
             <div class="theme-switcher">
                 <button class="theme-btn theme-default" onclick="changeTheme('default')" title="Tema Padrão"></button>
                 <button class="theme-btn theme-dark" onclick="changeTheme('dark')" title="Modo Escuro"></button>
@@ -35,31 +36,3 @@
             </div>
         </div>
     </header>
-
-    <main class="container" role="main">
-        <header class="page-header">
-            <h2>Seção 1 — O Problema Estrutural</h2>
-            <p>A vulnerabilidade da infraestrutura urbana frente aos extremos climáticos atuais.</p>
-        </header>
-
-        <article class="content-article">
-            <h3>O Apagão Digital em Cenários de Crise</h3>
-            <p>As metrópoles operam sob uma conectividade dependente de redes com fio ou torres de celular. Quando eventos meteorológicos intensos ocorrem — como inundações repentinas ou grandes incêndios florestais —, a infraestrutura física é danificada severamente.</p>
-            
-            <div class="hero-image">
-                <img src="imagens/imagem 10.avif" alt="Área florestal densa tomada por fogo durante incêndio noturno.">
-            </div>
-            
-            <h3>A Falha dos Sistemas Convencionais</h3>
-            <p>Sensores IoT tradicionais dependem de servidores em nuvem. Sem internet, eles falham imediatamente, deixando os gabinetes de gerenciamento de crise "cegos" e sem dados telemetricos para a tomada de decisões no momento em que mais precisam.</p>
-        </article>
-    </main>
-
-    <footer class="site-footer" role="contentinfo">
-        <p class="footer-team">Desenvolvido por: Arthur Sgarbi (RM 569774), Bruno Bastos (RM 569434) Pedro Oliveira (RM 572468)</p>
-        <p>Engenharia de Software — FIAP</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
