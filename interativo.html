@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHER | Hub Interativo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="header-container">
+            <div class="site-logo">
+                <h1>AETHER</h1>
+                <span>Resiliência de Dados</span>
+            </div>
+            <nav class="main-navigation" aria-label="Navegação Principal">
+                <ul>
+                    
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="problema.html">Problema</a></li>
+                    <li><a href="tecnologia.html">Tecnologia</a></li>
+                    <li><a href="objetivos.html">Objetivos e Público</a></li>
+                    <li><a href="beneficios.html">Benefícios e Prática</a></li>
+                    <li><a href="logs.html">Auditoria</a></li>
+                    <li><a href="interativo.html">Interativo</a></li>
+                </ul>
+            </nav>
+            
+            <!-- OPÇÕES DE TROCA DE TEMA -->
+            <div class="theme-switcher">
+                <button class="theme-btn theme-default" onclick="changeTheme('default')" title="Tema Padrão"></button>
+                <button class="theme-btn theme-dark" onclick="changeTheme('dark')" title="Modo Escuro"></button>
+                <button class="theme-btn theme-emergency" onclick="changeTheme('emergency')" title="Modo Alerta"></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- SLIDESHOW -->
+        <header class="page-header">
+            <h2>Galeria Operacional AETHER</h2>
+            <p>Visualização de campo dos eventos monitorados.</p>
+        </header>
+        <div class="slideshow-container">
+            <div class="slide"><img src="imagens/imagem 6.jpg" alt="Imagem 1 - Satélite"></div>
+            <div class="slide"><img src="imagens/imagem 10.avif" alt="Imagem 2 - Fogo Florestal"></div>
+            <div class="slide"><img src="imagens/imagem 9.jpg" alt="Imagem 3 - Radar Meteorológico"></div>
+        </div>
+
+        <!-- QUIZ SOBRE O PROJETO -->
+        <article class="content-article">
+            <h3>Avaliação Técnica (Quiz AETHER)</h3>
+            <p>Teste seus conhecimentos sobre a arquitetura do nosso ecossistema.</p>
+            
+            <div class="quiz-container" id="quizQuestions">
+
+            </div>
+            
+            <button class="btn-submit" onclick="calcularQuiz()">Finalizar e Ver Resultado</button>
+            <div id="quizResult"></div>
+        </article>
+
+    <!-- 3. FORMULÁRIO COM VALIDAÇÃO -->
+        <article class="content-article">
+            <h3>Simulador de Envio de Alerta de Campo</h3>
+            <p>Teste a validação JavaScript. Tente enviar com campos vazios para acionar a trava de segurança.</p>
+            
+            <form id="contatoForm" onsubmit="validarFormulario(event)">
+                <div class="form-group">
+                    <label for="nome">Nome do Operador de Borda:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail Institucional:</label>
+                    <input type="email" id="email" placeholder="operador@aether.gov">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Relatório de Risco:</label>
+                    <textarea id="mensagem" rows="4" placeholder="Descreva a situação climática no local..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Transmitir Alerta Crítico</button>
+            </form>
+        </article>
+
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-team">Desenvolvido por: Arthur Sgarbi Sousa (RM 569774) | Bruno Bastos (RM 569434) | Pedro Oliveira (RM 572468)</p>
+        <p>Engenharia de Software — FIAP</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
