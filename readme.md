@@ -3,7 +3,7 @@
 > **Fase 2: Desenvolvimento Web Avançado com JavaScript Dinâmico (Vanilla JS)**
 > Projeto acadêmico desenvolvido para o curso de **Engenharia de Software** na **FIAP**.
 
-🌐 **Acesse a aplicação em produção:** [GitHub Pages - AETHER](https://arthursgarbi.github.io/AETHER-web-development/)
+🌐 **Acesse a aplicação em produção:** [GitHub Pages - AETHER](https://futurecall-fiap.github.io/AETHER-web-development/)
 
 ---
 
